@@ -1,0 +1,19 @@
+Mura, Cecilia
+Quiroga, Paula
+Villarreal, María Gabriela
+
+A.  ¿Qué color de fondo tiene su página en el TESTING ?
+
+Testing tiene color azul.
+
+B.  ¿Qué color de fondo tiene su página en el DESARROLLO ?
+
+Desarrollo tiene color amarillo.
+
+C. ¿Qué color de fondo tiene su página en el MASTER?
+
+Master tiene color amarillo.
+
+D.  ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
+
+Quedó el favicon de Beta.
