@@ -1,1 +1,7 @@
- {margin:100px;}body {background:skyblue;}
+ *{
+    margin:100px;
+ }
+ 
+ body{
+     background:green;
+ }
