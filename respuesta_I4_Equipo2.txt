@@ -17,3 +17,45 @@ Master tiene color amarillo.
 D.  ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
 
 Quedó el favicon de Beta.
+
+E. ¿Algún integrante tuvo problemas al hacer el push?
+
+Beta y Gamma tuvieron errores al hacer el push.
+
+F. ¿Qué problemas surgieron?
+
+Error Beta:
+Administrador@EXO MINGW64 /c/xampp/htdocs/TP_SO_I4_Equipo_ (Testing)
+$ git push
+To https://github.com/RONIE70/TP_SO_I4_Equipo_.git
+ ! [rejected]        Testing -> Testing (fetch first)
+error: failed to push some refs to 'https://github.com/RONIE70/TP_SO_I4_Equipo_.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: 
+
+
+Error Gamma:
+Administrador@DESKTOP-QHR8R0E MINGW64 /c/xampp/htdocs/TP_SO_I4_Equipo_ (Testing)
+$ git push
+fatal: The current branch Testing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Testing
+
+G.  ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+
+Solución 1: los integrantes Beta y Gamma puede hacer un git fetch/git pull para actualizar sus repositorios locales con el primer cambio que hizo integrante Alfa y poder modificar los archivos actualizados sin que se pisen las versiones.
+
+Solución 2: los integrantes Beta y Gamma pueden hacer un git push --set-upstream que hace que se asocie la rama al origin y que se pueda hacer push o pull automaticamente.
+
+H. ¿Qué sucede si cada uno utiliza el push -f?
+
+Al hacer push -f se ignoran los cambios locales que se han realizado para actualizar el repositorio remoto.
+
+I.  ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20 en DESARROLLO ?
+
+Beta hace push -f para actualizar su <p> correspondiente
+Gamma hace git fetch para actualizar, hace un git pull origin Testing para actualizar rama de Testing, modificó en el archivo lo que se pisaba, hace git add ., git commit. Cambia a rama de Desarrollo con git checkout, hace git pull hace merge a Testing con git merge Testing, hace git push origin HEAD y quedó actualizado el Desarrollo con los tres <p>
